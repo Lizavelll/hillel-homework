@@ -1,91 +1,281 @@
+/*тут додаю шрифт*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+       url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+       url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* тут йде база*/
+:root {
+  --green: #0c8a28;
+  --muted: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* це хедер*/
 header {
   background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
 }
-
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+}
 header .logo {
-  display: inline-block;
-  color: green;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--green);
+  text-transform: uppercase;
 }
-
 header nav {
-  float: right;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
-
 header nav a {
-  margin: 0 10px;
   text-decoration: none;
-  color: black;
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s;
 }
-
-.login-btn {
-  background: green;
-  color: white;
+header nav a:hover {
+  color: var(--green);
+}
+header .login-btn {
+  background: var(--green);
+  color: #fff;
   border: none;
-  padding: 5px 15px;
+  padding: 6px 16px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
+  margin-left: 10px;
+}
+header .login-btn:hover {
+  background: #389346;
 }
 
 .banner {
-  background: #f5f5f5;
-  padding: 60px 0;
+  background: #f6f6f6;
+  padding: 70px 0;
 }
-
-.banner-text, .banner-img {
-  display: inline-block;
-  vertical-align: middle;
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .banner-text {
-  width: 55%;
+  max-width: 45%;
 }
-
 .banner-text .welcome {
-  color: rgb(143, 143, 143);
+  color: #888;
   font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
-
 .banner-text h1 {
-  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 20px;
 }
-
 .banner-text h1 span {
-  color: green;
+  color: var(--green);
 }
-
 .banner-text .desc {
-  margin: 20px 0;
+  margin: 0 0 30px;
+  color: #555;
+  max-width: 420px;
 }
-
 .shop-btn {
-  background: green;
-  color: white;
+  background: var(--green);
+  color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
 }
-
+.shop-btn:hover {
+  background: #389346;
+}
 .banner-img {
-  width: 40%;
+  width: 48%;
   text-align: right;
 }
-
 .banner-img img {
   max-width: 100%;
+  height: auto;
+}
+
+/* селекшн*/
+.products {
+  padding: 60px 0;
+}
+.sidebar {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+.sidebar h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+.products-content {
+  width: 73%;
+  display: inline-block;
+  vertical-align: top;
+}
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 0 4px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.tabs a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-right: 24px;
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 6px;
+  transition: 0.3s;
+}
+.tabs a.active {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+}
+.tabs a:hover {
+  color: var(--green);
+}
+.sort {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.sort label {
+  margin-right: 8px;
+  color: #666;
+}
+.sort select {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 
+
+/*вирівнюю картки*/
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;                
+  justify-items: center;    /
+}
+
+.product-card {
+  width: 100%;              
+  max-width: 240px;        
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.product-card img {
+  display: block;          
+  margin: 0 auto 10px;      
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*вирівнюю текст зверху бо він поплив:((*/
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.main-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+}

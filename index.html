@@ -8,17 +8,18 @@
 <body>
   <header>
     <div class="container">
-      <h2 class="logo">GREENSHOP</h2>
-      <nav>
+      <h2 class="logo">
+        <img src="images/logo.png.png" alt="Leaf logo" class="logo-icon">
+      </h2>
+      <nav class="main-nav">
         <a href="#">Home</a>
         <a href="#">Shop</a>
         <a href="#">Plant Care</a>
         <a href="#">Blogs</a>
-        <button onclick="window.location.href='registration.html'" class="login-btn">Login</button>
       </nav>
+      <button onclick="window.location.href='registration.html'" class="login-btn">Login</button>
     </div>
   </header>
-
   <section class="banner">
     <div class="container">
       <div class="banner-text">
@@ -33,6 +34,66 @@
     </div>
   </section>
 
+  <section class="products">
+    <div class="container">
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">House Plants</a></li>
+          <li><a href="#">Potter Plants</a></li>
+          <li><a href="#">Small Plants</a></li>
+          <li><a href="#">Big Plants</a></li>
+          <li><a href="#">Succulents</a></li>
+          <li><a href="#">Terrariums</a></li>
+          <li><a href="#">Gardening</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </aside>
+
+      <div class="products-content">
+        <div class="products-header">
+          <div class="tabs">
+            <a href="#" class="active">All Plants</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Sale</a>
+          </div>
+
+          <div class="sort">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+              <option value="default">Default sorting</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="images/plant1.png" alt="Plant">
+            <p class="name">Barberton Daisy</p>
+            <p class="price">$119.00</p>
+          </div>
+          <div class="product-card">
+            <img src="images/plant2.png" alt="Plant">
+            <p class="name">Angel Wing Begonia</p>
+            <p class="price">$169.00</p>
+          </div>
+          <div class="product-card">
+            <img src="images/plant3.png" alt="Plant">
+            <p class="name">African Violet</p>
+            <p class="price">$199.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="super-sale">
+    <div class="container">
+      <img src="images/supersale.png" alt="Super Sale Banner" class="super-sale-img">
+    </div>
+  </section>
 </body>
 </html>
-
