@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+header .logo {
+  display: inline-block;
+  color: green;
+  margin: 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.login-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.banner {
+  background: #f5f5f5;
+  padding: 60px 0;
+}
+
+.banner-text, .banner-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.banner-text {
+  width: 55%;
+}
+
+.banner-text .welcome {
+  color: rgb(143, 143, 143);
+  font-size: 14px;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+}
+
+.banner-text h1 span {
+  color: green;
+}
+
+.banner-text .desc {
+  margin: 20px 0;
+}
+
+.shop-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.banner-img {
+  width: 40%;
+  text-align: right;
+}
+
+.banner-img img {
+  max-width: 100%;
+}
+
+
