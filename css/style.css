@@ -1,4 +1,4 @@
-/*тут додаю шрифт*/
+/* Шрифти */
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
@@ -24,7 +24,7 @@
   font-display: swap;
 }
 
-/* тут йде база*/
+/* База */
 :root {
   --green: #0c8a28;
   --muted: #666;
@@ -49,7 +49,7 @@ body {
   padding: 0 20px;
 }
 
-/* це хедер*/
+/* Header */
 header {
   background: #fff;
   border-bottom: 1px solid #e6e6e6;
@@ -98,6 +98,7 @@ header .login-btn:hover {
   background: #389346;
 }
 
+/* Banner */
 .banner {
   background: #f6f6f6;
   padding: 70px 0;
@@ -153,12 +154,14 @@ header .login-btn:hover {
   height: auto;
 }
 
-/* селекшн*/
-.products {
-  padding: 60px 0;
-}
+/* Layout products */
 .sidebar {
   width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+.products-content {
+  width: 73%;
   display: inline-block;
   vertical-align: top;
 }
@@ -180,11 +183,6 @@ header .login-btn:hover {
   text-decoration: none;
   color: #333;
   font-weight: 400;
-}
-.products-content {
-  width: 73%;
-  display: inline-block;
-  vertical-align: top;
 }
 .products-header {
   display: flex;
@@ -227,26 +225,18 @@ header .login-btn:hover {
   border-radius: 4px;
   outline: none;
 }
-.products-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-
-
-/*вирівнюю картки*/
-
+/* Product grid */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 30px;                
-  justify-items: center;    /
+  gap: 30px;
+  justify-items: center;
 }
 
 .product-card {
-  width: 100%;              
-  max-width: 240px;        
+  width: 100%;
+  max-width: 240px;
   text-align: center;
   border: 1px solid #eee;
   padding: 15px;
@@ -254,28 +244,37 @@ header .login-btn:hover {
   background: #fff;
 }
 
+/* === Hover Overlay === */
+.product-card .img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.product-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.product-card .buy-btn {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product-card .img-wrap:hover .overlay {
+  opacity: 1;
+}
+
 .product-card img {
-  display: block;          
-  margin: 0 auto 10px;      
+  display: block;
+  margin: 0 auto 10px;
   max-width: 100%;
   height: auto;
-}
-
-
-
-/*вирівнюю текст зверху бо він поплив:((*/
-
-.header-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.main-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 40px;
 }
