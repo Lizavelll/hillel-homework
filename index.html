@@ -8,17 +8,43 @@
 <body>
   <header>
     <div class="container">
-      <h2 class="logo">
-        <img src="images/logo.png.png" alt="Leaf logo" class="logo-icon">
-      </h2>
-      <nav class="main-nav">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Plant Care</a>
-        <a href="#">Blogs</a>
-      </nav>
-      <button onclick="window.location.href='registration.html'" class="login-btn">Login</button>
-    </div>
+  <h2 class="logo">
+    <img src="images/logo.png.png" alt="Leaf logo" class="logo-icon">
+  </h2>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li class="has-sub">
+        <a href="#">Plant Care ▾</a>
+        <!-- перший рівень -->
+        <ul class="dropdown">
+          <li><a href="#">Drainage</a></li>
+          <li><a href="#">Fungicides</a></li>
+          <li><a href="#">Fertilizer</a></li>
+          <li class="has-sub">
+            <a href="#">Priming ▸</a>
+            <!-- другий рівень -->
+            <ul class="dropdown right">
+              <li><a href="#">Universal</a></li>
+              <li><a href="#">For Ficus</a></li>
+              <li><a href="#">For Cacti</a></li>
+              <li><a href="#">For Citrus</a></li>
+              <li><a href="#">For those in bloom</a></li>
+              <li><a href="#">For Orchids</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Blogs</a></li>
+    </ul>
+  </nav>
+
+  <button onclick="window.location.href='registration.html'" class="login-btn">Login</button>
+</div>
+
+
   </header>
 
   <section class="banner">
@@ -83,15 +109,20 @@
           </div>
 
           <div class="product-card">
-            <div class="img-wrap">
-              <img src="images/plant2.png" alt="Plant">
-              <div class="overlay">
-                <button class="buy-btn">Add to cart</button>
-              </div>
-            </div>
-            <p class="name">Angel Wing Begonia</p>
-            <p class="price">$169.00</p>
-          </div>
+          <div class="img-wrap">
+          <span class="badge">13% OFF</span>
+        <img src="images/plant2.png" alt="Plant">
+        <div class="icons">
+      <a href="#"><img src="images/heart.png.png" alt="like"></a>
+      <a href="#"><img src="images/search.png.jpg" alt="view"></a>
+      <a href="#"><img src="images/cart.png.jpg" alt="cart"></a>
+        </div>
+        </div>
+      <p class="name">Angel Wing Begonia</p>
+      <p class="price">$169.00 <span class="old-price">$220.00</span></p>
+      </div>
+
+
 
           <div class="product-card">
             <div class="img-wrap">
