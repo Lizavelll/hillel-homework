@@ -440,3 +440,168 @@ header .login-btn:hover {
   font-size: 14px;
   margin-left: 6px;
 }
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 80px;
+  background: #f9f9f9;
+}
+
+.service-item {
+  flex: 1;
+  text-align: center;
+}
+
+.newsletter {
+  flex: 1.5;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  background: #46a358;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  background: linear-gradient(90deg, #d9f7d9, #a1e3a1);
+  padding: 40px 80px;
+  color: #333;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-bottom h4 {
+  margin-bottom: 10px;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom li {
+  margin-bottom: 5px;
+}
+
+.socials img, .payments img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #e0f5e9 0%, #a5d6a7 50%, #4caf50 100%);
+  padding: 20px 60px;
+  border-radius: 4px 4px 0 0;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-info {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.info-item img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #d9f7d9 0%, #a1e3a1 50%, #46a358 100%);
+  padding: 20px 60px;
+  border-radius: 6px 6px 0 0;
+}
+
+.footer-logo img {
+  height: 40px;
+  display: block;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px; 
+  flex: 1;
+  margin-left: 60px; 
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap; 
+}
+
+.footer-payments img {
+  max-width: 200px; /
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-info {
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  margin-left: 60px;
+}
+
