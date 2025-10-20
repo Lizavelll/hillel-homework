@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading GreenShop...</title>
+
+  <meta http-equiv="refresh" content="3;url=index.html">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f6fff6;
+      font-family: "Poppins", sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .loader {
+      width: 70px;
+      height: 70px;
+      border: 6px solid #dcdcdc;
+      border-top: 6px solid #46a358;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .text {
+      font-size: 22px;
+      color: #333;
+      font-weight: 600;
+      letter-spacing: 1px;
+      animation: fade 2s ease-in-out infinite;
+    }
+
+    @keyframes fade {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .text span {
+      color: #46a358;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <div class="text">Loading <span>GreenShop...</span></div>
+</body>
+</html>

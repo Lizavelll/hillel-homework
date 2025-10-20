@@ -40,8 +40,7 @@
       <li><a href="#">Blogs</a></li>
     </ul>
   </nav>
-
-  <button onclick="window.location.href='registration.html'" class="login-btn">Login</button>
+    <button onclick="window.location.href='registration.html'" class="login-btn">Login</button>
 </div>
 
 
@@ -64,18 +63,46 @@
   <section class="products">
     <div class="container">
       <aside class="sidebar">
-        <h3>Categories</h3>
-        <ul>
-          <li><a href="#">House Plants</a></li>
-          <li><a href="#">Potter Plants</a></li>
-          <li><a href="#">Small Plants</a></li>
-          <li><a href="#">Big Plants</a></li>
-          <li><a href="#">Succulents</a></li>
-          <li><a href="#">Terrariums</a></li>
-          <li><a href="#">Gardening</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
-      </aside>
+      <h3>Categories</h3>
+      <ul>
+    <li><a href="#">House Plants (33)</a></li>
+    <li><a href="#">Potter Plants (12)</a></li>
+    <li><a href="#">Seeds (65)</a></li>
+    <li><a href="#">Small Plants (39)</a></li>
+    <li><a href="#">Big Plants (23)</a></li>
+    <li><a href="#">Succulents (17)</a></li>
+    <li><a href="#">Terrariums (19)</a></li>
+    <li><a href="#">Gardening (13)</a></li>
+    <li><a href="#">Accessories (18)</a></li>
+  </ul>
+
+  <h3>Price Range</h3>
+  <div class="price-range">
+    <input type="range" min="39" max="139" value="89" class="slider" id="priceRange">
+    <p>Price: $39 - $139</p>
+    <button class="filter-btn">Filter</button>
+  </div>
+
+  <h3>Size</h3>
+  <form class="size-form">
+    <label class="custom-checkbox">
+      <input type="checkbox" checked>
+      <span class="checkmark"></span>
+      Small
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Medium
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Large
+    </label>
+  </form>
+</aside>
+        
 
       <div class="products-content">
         <div class="products-header">
@@ -174,6 +201,7 @@
   </div>
 </section>
 
+
 <footer>
   <div class="container">
     <div class="footer-top">
@@ -249,5 +277,9 @@
     </div>
   </div>
 </footer>
+
+
+
+
 
 
