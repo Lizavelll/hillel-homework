@@ -479,6 +479,198 @@ header .login-btn:hover {
   cursor: pointer;
 }
 
+
+
+/* адаптивні стилі */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+
+@media (max-width: 1200px) {
+  .banner .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-text {
+    max-width: 100%;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .services {
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+
+  .footer-top, .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-info {
+    flex-wrap: wrap;
+    margin-left: 0;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .products-content {
+    width: 100%;
+    display: block;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-item, .newsletter {
+    width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-bottom .column {
+    margin: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .banner {
+    padding: 40px 0;
+  }
+
+  .banner-text h1 {
+    font-size: 22px;
+  }
+
+  .shop-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-logo img {
+    height: 30px;
+  }
+
+  .footer-info {
+    gap: 10px;
+  }
+
+  .info-item {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .banner-text h1 {
+    font-size: 20px;
+  }
+
+  .shop-btn {
+    width: 100%;
+  }
+
+  .product-card {
+    max-width: 180px;
+  }
+
+  .services {
+    padding: 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}
+
+
+
 .footer {
   background: linear-gradient(90deg, #d9f7d9, #a1e3a1);
   padding: 40px 80px;
@@ -605,3 +797,38 @@ header .login-btn:hover {
   margin-left: 60px;
 }
 
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-item {
+  flex: 1 1 calc(33.333% - 30px);
+  max-width: calc(33.333% - 30px);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.newsletter {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 540px) {
+  .service-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
